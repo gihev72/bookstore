@@ -11,6 +11,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-material.css";
 import AddBook from "./components/AddTodo";
+import Card from "./components/Card";
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -95,6 +96,7 @@ function App() {
       >
         <AgGridReact rowData={books} columnDefs={columnDefs} />
       </div>
+      <Card />
     </>
   );
 }
